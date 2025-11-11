@@ -5,7 +5,7 @@
       "src": "main.py",
       "use": "@vercel/python",
       "config": {
-        "runtime": "python3.13",
+        "runtime": "python3.11",
         "maxLambdaSize": "50mb",
         "includeFiles": ["backend/**"]
       }
@@ -14,7 +14,4 @@
   "routes": [
     { "src": "/(.*)", "dest": "main.py" }
   ],
-  "env": {
-    "PYTHONUNBUFFERED": "1"
-  }
 }
