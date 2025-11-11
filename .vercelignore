@@ -1,7 +1,12 @@
-logs/
+pyproject.toml
+Pipfile
+Pipfile.lock
 __pycache__/
-*.log
-*.zip
-*.tar
+*.pyc
+*.pyo
+*.pyd
+env/
 venv/
-.env
+.logs/
+logs/
+node_modules/
