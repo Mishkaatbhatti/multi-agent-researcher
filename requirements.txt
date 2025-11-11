@@ -1,6 +1,9 @@
 # GPT-Researcher Direct Dependencies
 # Python 3.10+ required for LangChain v1
 
+#Python 3.11 runtime
+python_version == 3.11
+
 # Core Framework
 fastapi>=0.104.1
 uvicorn>=0.24.0.post1
