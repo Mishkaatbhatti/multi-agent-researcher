@@ -1,16 +1,9 @@
 {
   "version": 2,
-  "buildCommand": "pip install -r requirements.txt",
   "builds": [
-    {
-      "src": "main.py",
-      "use": "@vercel/python",
-      "config": {
-        "runtime": "python3.11",
-        "maxLambdaSize": "50mb",
-        "includeFiles": ["backend/**"]
-      }
-    }
+    { "src": "Dockerfile", "use": "@vercel/docker" }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "main.py" }]
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ]
 }
